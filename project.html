@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+<head>
+  <title>流程设计工具</title>
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="re.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  
+  
+  <script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="do.txt"></script>
+  <script src="https://cdn.bootcss.com/d3-transform/1.0.4/d3-transform.min.js"></script>
+</head>
+<body>
+    <div class="container-fuild">
+      <div id="left-wrapper" class="left-wrapper">
+	  
+        <ul class="sidebar-nav">
+
+          <li id="process">
+            <a>
+              <i class="fa fa-folder-o"></i>
+              <span>流程项</span>
+            </a>
+            <ul id="myul">
+             
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="middle-wrapper">
+        <h4>项目名称</h4>
+        <div id="idsw-bpmn" class="bpmn" style="position: relative; width: 100%; height: 100%;">
+          <svg width="100%" height="100%">
+          <defs>
+            <marker id="arrowhead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M 0 0 L 10 5 L 0 10 z" stroke-width="0" stroke="#333"></path>
+            </marker>
+          </defs>
+        </svg>
+        </div>
+        
+      </div>
+      <div class="right-wrapper">
+        <h4>项目属性</h4>
+		
+		<input type="text" class="form-control" id="new_name" placeholder="请输入名称">
+		<button type="submit" class="btn btn-default" onclick="addprocess()">提交</button>
+		
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="doappend.txt"></script>
+
+</html>
+</html>
