@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <link rel="stylesheet" href="https://yy123.ink/blog/upload/preview/201991hyby6015/css/style.css">
+
+<script>
+	$(document).ready(function(){
+		
+		$("#bt1").click(function(){
+		    $("#l_sks").load("data.txt");
+			
+		});
+		
+		
+	});
+
+
+	
+
+</script>
+
 </head>
 <body>
 
@@ -243,24 +260,15 @@
 
   <div data-role="main" class="ui-content">
    	<h2>私募日记：</h2><br/>
-    <ul data-role="listview">
-      <li><a href="#">20220929   空 - 延续慢</a></li>
-      <li><a href="#">20220927   多 - 反弹</a></li>
-      <li><a href="#">20220923   空 - 延续</a></li>
-	  <li><a href="#">20220915   空 - 继续加强</a></li>
-      <li><a href="#">20220914   空 - 继续加强</a></li>
-      <li><a href="#">20220913   空 - 大盘，个股</a></li>
-	  <li><a href="#">20220829   空 - 延续</a></li>
-      <li><a href="#">20220825   空 - 延续</a></li>
-      <li><a href="#">20220824   空 - 继续加强</a></li>
-      <li><a href="#">20220823   空 - 大盘，个股</a></li>
+    <ul id="l_sks" data-role="listview">
+     
 
 	  
     </ul>
   </div>
 <br/>
   <center>
-    <a href="#page1" data-transition="slide">返回首页</a></center>
+    <a href="#page1" data-transition="slide">返回首页</a><button id="bt1">查看</button></center>
 </div> 
 
 <div data-role="page" id="page3">
